@@ -1,0 +1,201 @@
+// Header
+.header{
+    margin: 30px 0;
+}
+
+.logo{
+    width: 220px;
+    height: 40px;
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/13f2e6e6b718b6abafb62ce7a672d42fc39eaeae/student-week1/logo-all-dark.svg");
+    background-size: cover;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.nav ul{
+    margin-right: 50px;
+    a{
+        padding: 0px 30px;
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+}
+.cart:hover{
+    opacity: 0.7;
+}
+
+
+// Banner
+.banner{
+    margin-bottom: 60px;
+}
+
+
+// Product
+.menu{
+    width: 300px;
+    li:not(:first-child){
+        border-bottom: 1px solid $secondary;
+        border-left: 1px solid $secondary;
+        border-right: 1px solid $secondary;
+        &:hover{
+            background-color: $secondary;
+        }
+    }
+}
+.products{
+    width: 620px;
+}
+.active{
+    background-color: $secondary;
+}
+
+.card{
+    margin-bottom: 20px;
+    position: relative;
+    &-body{
+        display: flex;
+        color: $primary;
+        text-align: center;
+        border-left: 1px solid $secondary;
+        border-right: 1px solid $secondary;
+    }
+    &-link{
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        padding: 16px 0;
+        color: $primary;
+        background-color: $secondary;
+        border: 1px solid $secondary;
+        &:hover{
+            color: $secondary;
+            background-color: $primary;
+        }
+    }
+    &-title{
+        width: 60%;
+        padding: 14px 0;
+        font-size: 20px;
+        line-height: 1;
+    }
+    &-text{
+        width: 40%;
+        padding: 14px 0;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: bold;
+        border-left: 1px solid $secondary;
+    }
+    &-tag{
+        position: absolute;
+        top: 0;
+        left: 20px;
+        padding: 10px;
+        font-weight: bold;
+        line-height: 1;
+        writing-mode: vertical-rl;
+        letter-spacing: 5px;
+        color: $secondary;
+        background-color: $primary;
+    }
+    &-like{
+        position: absolute;
+        top: 19px;
+        right: 22px;
+        color: $primary;
+        font-size: 20px;
+        i:hover{
+            font-weight: bold;
+        }
+    }
+}
+
+
+// Pagenation
+.pagenation{
+    width: 60px;
+    text-align: center;
+    a{
+        border: 1px solid $secondary;
+        padding: 19px 0;
+        color: $primary;
+        font-size: 20px;
+        line-height: 1;
+        &:hover{
+            border-color: $primary;
+            color: $secondary;
+            background-color: $primary;
+        }
+    }
+}
+
+.pagenation.active a{
+    color: $secondary;
+    border-color: $primary;
+    background-color: $primary;
+}
+
+
+// footer
+.subscribe{
+    padding: 30px 0;
+    &-img{
+        width: 40px;
+        margin-right: 20px;
+    }
+    &-form{
+        position: relative;
+    }
+    &-label{
+        position: absolute;
+        top: 16px;
+        left: 20px;
+        font-size: 24px;
+        line-height: 1;
+        color: $primary;
+    }
+    &-input{
+        width: 300px;
+        padding: 20px 20px;
+        border: none;
+        outline: none;
+        text-indent: 50px;
+    }
+    &-btn{
+        cursor: pointer;
+        width: 64px;
+        height: 56px;
+        border: none;
+        padding: 0;
+        background-color: #FFE180;
+        font-size: 16px;
+        &:hover{
+            background-color: #f5cc5c;
+        }
+    }
+}
+
+.text-hover:hover{
+    opacity: 0.8;
+}
+
+.slogan{
+    writing-mode: vertical-rl;
+    letter-spacing: 4px;
+    span{
+        padding-top: 10px;
+    }
+}
+
+.iconLink{
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}
+.iconHover:hover{
+    transform: scale(1.2);
+    transition: ease  all 0.5s;
+}
