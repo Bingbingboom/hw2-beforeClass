@@ -30,6 +30,9 @@
 // Banner
 .banner{
     margin-bottom: 60px;
+    img{
+        width: 100%;
+    }
 }
 
 
@@ -114,10 +117,6 @@
             background-color: #f5cc5c;
         }
     }
-}
-
-.text-hover:hover{
-    opacity: 0.8;
 }
 
 .slogan{
